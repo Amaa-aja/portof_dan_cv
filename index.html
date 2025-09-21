@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyPortfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="logo">MyPortfolio</div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul id="nav-links">
+      <li><a href="#home" class="nav-item">Home</a></li>
+      <li><a href="#about" class="nav-item">About</a></li>
+      <li><a href="#projects" class="nav-item">Projects</a></li>
+      <li><a href="#contact" class="nav-item">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Your Name</span></h1>
+      <p>Welcome to my portfolio website</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </section>
+
+  <section id="about" class="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vitae.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2 data-aos="fade-left">My Projects</h2>
+    <div class="card-container">
+      <div class="flip-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Project 1</h3>
+            <p>Short description</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Detail Project 1</h3>
+            <p>More info about project</p>
+            <a href="#" class="project-link">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Project 2</h3>
+            <p>Short description</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Detail Project 2</h3>
+            <p>More info about project</p>
+            <a href="#" class="project-link">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- bisa tambah lagi dengan data-aos-delay berbeda -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div class="social">
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">LinkedIn</a>
+    </div>
+  </section>
+
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
