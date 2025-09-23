@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — MyPortRaja</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav-wrap">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="logo">MyPort<span class="accent">Raja</span></div>
+
+      <button id="hamburger" class="hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul id="nav-links" class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" class="nav-link" href="#home">Home</a></li>
+        <li role="none"><a role="menuitem" class="nav-link" href="#about">About</a></li>
+        <li role="none"><a role="menuitem" class="nav-link" href="#projects">Projects</a></li>
+        <li role="none"><a role="menuitem" class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- mobile dim overlay when menu open -->
+    <div id="mobile-overlay" class="mobile-overlay" aria-hidden="true"></div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero" data-aos="fade-up">
+      <div class="hero-inner">
+        <h1>Hello, I'm <strong>Raja Fidhiazka Pratama</strong></h1>
+        <p class="typed-sub">I learn <span id="typed-role" aria-live="polite"></span></p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <!-- subtle SVG wave bottom -->
+      <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none"><path fill="#f5f5f5" d="M0,40 C200,140 400,0 720,40 C1040,80 1240,20 1440,60 L1440 120 L0 120 Z"></path></svg>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about" data-aos="fade-right">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="WIN_20250429_14_09_34_Pro.jpg" alt="photo" class="avatar" aria-hidden="true">
+          </div>
+          <div class="about-text" data-aos="fade-left" data-aos-delay="150">
+            <p>Hi — saya developer backend yang suka membangun sistem bersih, cepat, dan andal. Fokus pada arsitektur server, API, dan optimisasi performa. Saya senang bereksperimen dengan desain database, caching, dan otomatisasi proses untuk meningkatkan efisiensi dan skalabilitas aplikasi.</p>
+            <div class="skills">
+              <div class="skill">
+                <label>HTML/CSS</label>
+                <div class="skill-bar"><span style="width:90%"></span></div>
+              </div>
+              <div class="skill">
+                <label>JavaScript</label>
+                <div class="skill-bar"><span style="width:85%"></span></div>
+              </div>
+              <div class="skill">
+                <label>C#</label>
+                <div class="skill-bar"><span style="width:70%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects" data-aos="fade-up">
+      <div class="container">
+        <h2>My Projects</h2>
+
+        <!-- filters -->
+        <div class="project-controls" data-aos="fade-left">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="ui">UI</button>
+        </div>
+
+        <div class="card-grid" id="projects-grid">
+          <!-- Sample project card 1 -->
+          <article class="project-card flip-card tilt" data-tags="web" data-aos="zoom-in" data-aos-delay="80"
+                   data-title="Project A" data-desc="Project A is a responsive website with animations."
+                   data-img="">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-media"></div>
+                <h3>Project A</h3>
+                <p class="muted">Responsive Web App</p>
+              </div>
+              <div class="flip-card-back">
+                <h3>Project A</h3>
+                <p>Project A is a responsive website built with HTML/CSS and lightweight JS for interactions.</p>
+                <div class="card-actions">
+                  <button class="btn small open-project">Details</button>
+                  <a class="btn small btn-outline" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sample project card 2 -->
+          <article class="project-card flip-card tilt" data-tags="ui" data-aos="zoom-in" data-aos-delay="140"
+                   data-title="UI Kit B" data-desc="A modern UI kit & components library." data-img="">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-media"></div>
+                <h3>UI Kit B</h3>
+                <p class="muted">Design System</p>
+              </div>
+              <div class="flip-card-back">
+                <h3>UI Kit B</h3>
+                <p>Design tokens, components, and examples for consistent UI development.</p>
+                <div class="card-actions">
+                  <button class="btn small open-project">Details</button>
+                  <a class="btn small btn-outline" href="#" target="_blank" rel="noopener">Live</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- add more cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact" data-aos="fade-up">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form" data-aos="fade-right">
+            <input name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <textarea name="message" rows="5" placeholder="Message"></textarea>
+            <div class="form-row">
+              <button type="submit" class="btn">Send Message</button>
+              <button type="reset" class="btn btn-outline">Reset</button>
+            </div>
+          </form>
+
+          <aside class="contact-info" data-aos="fade-left">
+            <h3>Let's connect</h3>
+            <p>Feel free to reach out via email or social media.</p>
+            <div class="socials">
+              <a href="https://www.instagram.com/rajafidhiazka?igsh=MXNobDBqYTF6ZDNkNg== " aria-label="Instagram">IG</a>
+              <a href="https://www.linkedin.com/in/raja-fidhiazka-989212347/" aria-label="LinkedIn">IN</a>
+              <a href="https://github.com/Amaa-aja" aria-label="Github">GH</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Raja Fidhiazka — Built with care.</small>
+      </div>
+    </footer>
+  </main>
+
+  <!-- MODAL (project details) -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-body">
+        <div class="modal-media"></div>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- small toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
