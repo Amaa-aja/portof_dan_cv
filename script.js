@@ -208,3 +208,18 @@ document.addEventListener('mousemove', (e) => {
     navWrap.classList.remove('hide');
   }
 });
+
+// ---------- SEA INTRO SCREEN ----------
+const intro = document.getElementById('intro-screen');
+const enterBtn = document.getElementById('enter-btn');
+
+if (intro && enterBtn) {
+  document.body.style.overflow = 'hidden'; // lock scroll saat intro
+  enterBtn.addEventListener('click', () => {
+    intro.classList.add('hide');
+    setTimeout(() => {
+      intro.remove();
+      document.body.style.overflow = 'auto'; // unlock scroll
+    }, 1200);
+  });
+}

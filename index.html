@@ -16,6 +16,15 @@
 </head>
 <body>
 
+  <div id="intro-screen" class="intro-screen">
+    <div class="waves-bg"></div>
+    <div class="intro-content" data-aos="zoom-in">
+      <h1 class="intro-title">Welcome to <span>MyPortRaja</span></h1>
+      <p class="intro-sub">In the quiet sea of code, creativity drifts effortlessly. 🌊</p>
+      <button id="enter-btn" class="enter-btn">Enter the PortSea</button>
+    </div>
+  </div>
+
   <!-- NAVBAR -->
   <header class="nav-wrap">
     <nav class="navbar" role="navigation" aria-label="Main navigation">
@@ -44,7 +53,7 @@
         <p class="typed-sub">I learn <span id="typed-role" aria-live="polite"></span></p>
         <div class="hero-cta">
           <a href="#projects" class="btn">View Projects</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
+          <a href="#contact" class="btn btn-outlinee">Contact Me</a>
         </div>
       </div>
       <!-- subtle SVG wave bottom -->
@@ -165,34 +174,50 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="container">
-        <small>© <span id="year"></span> Raja Fidhiazka — Built with care.</small>
-      </div>
-    </footer>
+   <div class="liquid-footer">
+    <div class="liquid"></div>
+    <div class="liquid"></div>
+    <div class="liquid"></div>
+  </div>
+
   </main>
 
-  <!-- MODAL (project details) -->
-  <div id="project-modal" class="modal" aria-hidden="true">
-    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-      <button class="modal-close" aria-label="Close">&times;</button>
-      <div class="modal-body">
-        <div class="modal-media"></div>
-        <h3 id="modal-title"></h3>
-        <p id="modal-desc"></p>
+  <!-- FOOTER -->
+<footer class="glow-footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <h2 class="footer-logo">MyPort<span>Raja</span></h2>
+      <p class="footer-desc">Crafting clean backends and smooth APIs — from logic to performance.</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/rajafidhiazka?igsh=MXNobDBqYTF6ZDNkNg==" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/raja-fidhiazka-989212347/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Amaa-aja" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
+    </div>
+
+    <div class="footer-bottom">
+      <small>© <span id="year"></span> Raja Fidhiazka — Built with 💙 and clean code.</small>
     </div>
   </div>
 
+  <!-- Stylish Neon Footer Background -->
+<div class="footer-effect">
+  <div class="wave"></div>
+  <div class="wave second"></div>
+  <div class="wave third"></div>
+</div>
+
+</footer>
+
+
   <!-- BACK TO TOP -->
   <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
-
-  <!-- small toast -->
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-
-  <!-- Line -->
-  <canvas id="neon-lines"></canvas>
 
 
   <!-- SCRIPTS -->
